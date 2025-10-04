@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome! This is the home page for your course reports.\n\nMP01: See the menu bar → “MP01 Report” (renders from mp01.qmd).\nOutput is configured to docs/ (required by GitHub Pages).\n\n\n\n\nRender the site:\nquarto render\nCommit & push:\ngit add .\ngit commit -m \"Publish Quarto website to docs/\"\ngit push\nEnable GitHub Pages: Settings → Pages → Source = main /docs."
+    "text": "STA9750 2025 FALL — Mini Projects\nWelcome! This is the home page for my course reports.\n\nMP01: See the menu bar → “MP01 Report” (renders from mp01.qmd)."
   },
   {
     "objectID": "index.html#how-to-publish",
