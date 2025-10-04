@@ -1,0 +1,13 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "STA9750 2025 FALL"
+  navbar:
+    left:
+      - href: mp01.qmd
+        text: MP01 Report
+format:
+  html:
+    theme: flatly
+    toc: true

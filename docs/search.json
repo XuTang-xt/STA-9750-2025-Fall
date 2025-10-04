@@ -124,5 +124,19 @@
     "title": "STA 9750 — Mini‑Project #01: Gourmet Cheeseburgers Across the Globe",
     "section": "Figure V4 — Squid Game: Weekly Global Viewing",
     "text": "Figure V4 — Squid Game: Weekly Global Viewing\n\n\nCode\nsquid_weekly &lt;- GLOBAL_TOP_10 |&gt;\n  dplyr::filter(stringr::str_detect(show_title, stringr::regex(\"^Squid Game\", ignore_case = TRUE))) |&gt;\n  dplyr::group_by(week) |&gt;\n  dplyr::summarise(hours = sum(weekly_hours_viewed, na.rm = TRUE), .groups=\"drop\") |&gt;\n  dplyr::arrange(week)\n\nggplot(squid_weekly, aes(x = week, y = hours)) +\n  geom_line(linewidth = 1) +\n  scale_y_continuous(labels = scales::label_comma()) +\n  labs(x = \"Week\", y = \"Weekly Hours Viewed (Global)\",\n       title = \"Squid Game — Global Weekly Viewing\",\n       subtitle = \"Aggregated across all seasons\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome! This is the home page for your course reports.\n\nMP01: See the menu bar → “MP01 Report” (renders from mp01.qmd).\nOutput is configured to docs/ (required by GitHub Pages).\n\n\n\n\nRender the site:\nquarto render\nCommit & push:\ngit add .\ngit commit -m \"Publish Quarto website to docs/\"\ngit push\nEnable GitHub Pages: Settings → Pages → Source = main /docs."
+  },
+  {
+    "objectID": "index.html#how-to-publish",
+    "href": "index.html#how-to-publish",
+    "title": "Welcome",
+    "section": "",
+    "text": "Render the site:\nquarto render\nCommit & push:\ngit add .\ngit commit -m \"Publish Quarto website to docs/\"\ngit push\nEnable GitHub Pages: Settings → Pages → Source = main /docs."
   }
 ]

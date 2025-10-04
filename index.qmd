@@ -1,0 +1,24 @@
+---
+title: "Welcome"
+---
+
+# STA9750 2025 FALL — GitHub Pages
+
+Welcome! This is the home page for your course reports.
+
+- **MP01:** See the menu bar → “MP01 Report” (renders from `mp01.qmd`).
+- Output is configured to **`docs/`** (required by GitHub Pages).
+
+## How to publish
+
+1. Render the site:
+   ```bash
+   quarto render
+   ```
+2. Commit & push:
+   ```bash
+   git add .
+   git commit -m "Publish Quarto website to docs/"
+   git push
+   ```
+3. Enable GitHub Pages: Settings → Pages → Source = **main /docs**.
