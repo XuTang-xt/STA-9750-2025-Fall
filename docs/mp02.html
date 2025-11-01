@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="XU TANG">
+<meta name="dcterms.date" content="2025-11-01">
+
+<title>STA 9750 Mini‑Project #02: Making Backyards Affordable for All – STA9750 2025 FALL</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ffa9a6279353761231ec249df0a7fdd3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">STA9750 2025 FALL</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./mp01.html"> 
+<span class="menu-text">MP01 Report</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#task-1-data-import" id="toc-task-1-data-import" class="nav-link active" data-scroll-target="#task-1-data-import">1) Task 1 — Data Import</a></li>
+  <li><a href="#task-2-multitable-questions" id="toc-task-2-multitable-questions" class="nav-link" data-scroll-target="#task-2-multitable-questions">2) Task 2 — Multi‑Table Questions</a></li>
+  <li><a href="#task-3-initial-visualizations" id="toc-task-3-initial-visualizations" class="nav-link" data-scroll-target="#task-3-initial-visualizations">3) Task 3 — Initial Visualizations</a></li>
+  <li><a href="#task-4-rent-burden-metric" id="toc-task-4-rent-burden-metric" class="nav-link" data-scroll-target="#task-4-rent-burden-metric">4) Task 4 — Rent Burden Metric</a></li>
+  <li><a href="#task-5-housing-growth-metric" id="toc-task-5-housing-growth-metric" class="nav-link" data-scroll-target="#task-5-housing-growth-metric">5) Task 5 — Housing Growth Metric</a></li>
+  <li><a href="#task-6-linking-the-metrics-rent-burden-vs-housing-growth" id="toc-task-6-linking-the-metrics-rent-burden-vs-housing-growth" class="nav-link" data-scroll-target="#task-6-linking-the-metrics-rent-burden-vs-housing-growth">6) Task 6 — Linking the Metrics (Rent Burden vs Housing Growth)</a></li>
+  <li><a href="#task-7-onepage-policy-brief" id="toc-task-7-onepage-policy-brief" class="nav-link" data-scroll-target="#task-7-onepage-policy-brief">7) Task 7 — One‑Page Policy Brief</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">STA 9750 Mini‑Project #02: Making Backyards Affordable for All</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>XU TANG </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 1, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="task-1-data-import" class="level1">
+<h1>1) Task 1 — Data Import</h1>
+<p>This section downloads and caches ACS (via <code>tidycensus</code>), BPS building permits, and BLS QCEW wages/employment. Data are stored under <code>data/mp02/</code>. If a file exists, it will be reused.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Packages ----</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>library <span class="ot">&lt;-</span> <span class="cf">function</span>(pkg){</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  pkg <span class="ot">&lt;-</span> <span class="fu">as.character</span>(<span class="fu">substitute</span>(pkg))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">options</span>(<span class="at">repos =</span> <span class="fu">c</span>(<span class="at">CRAN =</span> <span class="st">"https://cloud.r-project.org"</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="sc">!</span><span class="fu">require</span>(pkg, <span class="at">character.only =</span> <span class="cn">TRUE</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) <span class="fu">install.packages</span>(pkg)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stopifnot</span>(<span class="fu">require</span>(pkg, <span class="at">character.only =</span> <span class="cn">TRUE</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidycensus)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(httr2)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Ensure local cache folder</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"mp02"</span>))){</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"mp02"</span>), <span class="at">showWarnings =</span> <span class="cn">FALSE</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Census API Key (provided by student) ----</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="co"># If you want to save the key to ~/.Renviron for future sessions, set install = TRUE.</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">census_api_key</span>(<span class="st">"b5a3f40e8cd9d0b21f117ecb3e353cd6b52ed032"</span>, <span class="at">install =</span> <span class="cn">FALSE</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Helper: Download ACS across years (skip 2020 as per project notes) ----</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>get_acs_all_years <span class="ot">&lt;-</span> <span class="cf">function</span>(variable, <span class="at">geography =</span> <span class="st">"cbsa"</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>                              <span class="at">start_year =</span> <span class="dv">2009</span>, <span class="at">end_year =</span> <span class="dv">2023</span>){</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"{variable}_{geography}_{start_year}_{end_year}.csv"</span>)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"mp02"</span>, fname)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(fname)){</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    YEARS <span class="ot">&lt;-</span> <span class="fu">seq</span>(start_year, end_year)</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    YEARS <span class="ot">&lt;-</span> YEARS[YEARS <span class="sc">!=</span> <span class="dv">2020</span>] <span class="co"># Drop 2020</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    ALL_DATA <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map</span>(YEARS, <span class="cf">function</span>(yy){</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>      tidycensus<span class="sc">::</span><span class="fu">get_acs</span>(geography, variable, <span class="at">year =</span> yy, <span class="at">survey =</span> <span class="st">"acs1"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">year =</span> yy) <span class="sc">|&gt;</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>moe, <span class="sc">-</span>variable) <span class="sc">|&gt;</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="sc">!!</span><span class="at">variable :=</span> estimate)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    }) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>()</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    readr<span class="sc">::</span><span class="fu">write_csv</span>(ALL_DATA, fname)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>(fname, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="co"># ACS variables</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>INCOME <span class="ot">&lt;-</span> <span class="fu">get_acs_all_years</span>(<span class="st">"B19013_001"</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">household_income =</span> B19013_001)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>RENT   <span class="ot">&lt;-</span> <span class="fu">get_acs_all_years</span>(<span class="st">"B25064_001"</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">monthly_rent     =</span> B25064_001)</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>POP    <span class="ot">&lt;-</span> <span class="fu">get_acs_all_years</span>(<span class="st">"B01003_001"</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">population       =</span> B01003_001)</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>HH     <span class="ot">&lt;-</span> <span class="fu">get_acs_all_years</span>(<span class="st">"B11001_001"</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">households       =</span> B11001_001)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Building Permits (BPS) ----</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>get_building_permits <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">start_year =</span> <span class="dv">2009</span>, <span class="at">end_year =</span> <span class="dv">2023</span>){</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"housing_units_{start_year}_{end_year}.csv"</span>)</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"mp02"</span>, fname)</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(fname)){</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    HISTORICAL_YEARS <span class="ot">&lt;-</span> <span class="fu">seq</span>(start_year, <span class="dv">2018</span>)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    HISTORICAL_DATA <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map</span>(HISTORICAL_YEARS, <span class="cf">function</span>(yy){</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>      historical_url <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"https://www.census.gov/construction/bps/txt/tb3u{yy}.txt"</span>)</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>      LINES <span class="ot">&lt;-</span> <span class="fu">readLines</span>(historical_url)[<span class="sc">-</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">11</span>)]</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>      CBSA_LINES <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_detect</span>(LINES, <span class="st">"^[[:digit:]]"</span>)</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>      CBSA <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(stringr<span class="sc">::</span><span class="fu">str_sub</span>(LINES[CBSA_LINES], <span class="dv">5</span>, <span class="dv">10</span>))</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>      PERMIT_LINES <span class="ot">&lt;-</span> stringr<span class="sc">::</span><span class="fu">str_detect</span>(stringr<span class="sc">::</span><span class="fu">str_sub</span>(LINES, <span class="dv">48</span>, <span class="dv">53</span>), <span class="st">"[[:digit:]]"</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>      PERMITS <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(stringr<span class="sc">::</span><span class="fu">str_sub</span>(LINES[PERMIT_LINES], <span class="dv">48</span>, <span class="dv">53</span>))</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>      tibble<span class="sc">::</span><span class="fu">tibble</span>(<span class="at">CBSA =</span> CBSA,</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>                     <span class="at">new_housing_units_permitted =</span> PERMITS,</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>                     <span class="at">year =</span> yy)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    }) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>()</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    CURRENT_YEARS <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">2019</span>, end_year)</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    CURRENT_DATA <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map</span>(CURRENT_YEARS, <span class="cf">function</span>(yy){</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>      current_url <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"https://www.census.gov/construction/bps/xls/msaannual_{yy}99.xls"</span>)</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>      tmp <span class="ot">&lt;-</span> <span class="fu">tempfile</span>()</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>      <span class="fu">download.file</span>(current_url, <span class="at">destfile =</span> tmp, <span class="at">mode =</span> <span class="st">"wb"</span>)</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Read as xlsx if possible, fallback to xls</span></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>      df <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>(readxl<span class="sc">::</span><span class="fu">read_excel</span>(tmp, <span class="at">skip =</span> <span class="dv">5</span>),</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>                   <span class="at">error =</span> <span class="cf">function</span>(e) readxl<span class="sc">::</span><span class="fu">read_xls</span>(tmp, <span class="at">skip =</span> <span class="dv">5</span>))</span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>      df <span class="sc">|&gt;</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>        tidyr<span class="sc">::</span><span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, Total) <span class="sc">|&gt;</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">year =</span> yy) <span class="sc">|&gt;</span></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">new_housing_units_permitted =</span> Total)</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>    }) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>()</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>    ALL_DATA <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(HISTORICAL_DATA, CURRENT_DATA)</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>    readr<span class="sc">::</span><span class="fu">write_csv</span>(ALL_DATA, fname)</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>(fname, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>PERMITS <span class="ot">&lt;-</span> <span class="fu">get_building_permits</span>()</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- BLS NAICS structure (levels) ----</span></span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>get_bls_industry_codes <span class="ot">&lt;-</span> <span class="cf">function</span>(){</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"mp02"</span>, <span class="st">"bls_industry_codes.csv"</span>)</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>  <span class="co"># If cached, try reading first</span></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">file.exists</span>(fname)){</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(readr<span class="sc">::</span><span class="fu">read_csv</span>(fname, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>))</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Try to fetch from BLS (nice to have, not required for this project)</span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>  ok <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>  <span class="fu">try</span>({</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>    resp <span class="ot">&lt;-</span> <span class="fu">request</span>(<span class="st">"https://www.bls.gov"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a>      <span class="fu">req_url_path</span>(<span class="st">"cew"</span>, <span class="st">"classifications"</span>, <span class="st">"industry"</span>, <span class="st">"industry-titles.htm"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>      <span class="fu">req_headers</span>(<span class="st">`</span><span class="at">User-Agent</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Mozilla/5.0"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>      <span class="fu">req_error</span>(<span class="at">is_error =</span> \(resp) <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>      <span class="fu">req_perform</span>()</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (httr2<span class="sc">::</span><span class="fu">resp_status</span>(resp) <span class="sc">==</span> <span class="dv">200</span>L) {</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>      naics_table <span class="ot">&lt;-</span> <span class="fu">resp_body_html</span>(resp) <span class="sc">|&gt;</span></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>        <span class="fu">html_element</span>(<span class="st">"#naics_titles"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>        <span class="fu">html_table</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">title =</span> stringr<span class="sc">::</span><span class="fu">str_trim</span>(stringr<span class="sc">::</span><span class="fu">str_remove</span>(stringr<span class="sc">::</span><span class="fu">str_remove</span>(<span class="st">`</span><span class="at">Industry Title</span><span class="st">`</span>, Code), <span class="st">"NAICS"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span><span class="st">`</span><span class="at">Industry Title</span><span class="st">`</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">depth =</span> dplyr<span class="sc">::</span><span class="fu">if_else</span>(<span class="fu">nchar</span>(Code) <span class="sc">&lt;=</span> <span class="dv">5</span>, <span class="fu">nchar</span>(Code) <span class="sc">-</span> <span class="dv">1</span>L, <span class="cn">NA_integer_</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(depth))</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Add missing rollups, then build level table</span></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>      naics_missing <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tribble</span>(</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>        <span class="sc">~</span>Code, <span class="sc">~</span>title, <span class="sc">~</span>depth,</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>        <span class="st">"31"</span>,<span class="st">"Manufacturing"</span>,<span class="dv">1</span>,<span class="st">"32"</span>,<span class="st">"Manufacturing"</span>,<span class="dv">1</span>,<span class="st">"33"</span>,<span class="st">"Manufacturing"</span>,<span class="dv">1</span>,</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>        <span class="st">"44"</span>,<span class="st">"Retail"</span>,<span class="dv">1</span>,<span class="st">"45"</span>,<span class="st">"Retail"</span>,<span class="dv">1</span>,<span class="st">"48"</span>,<span class="st">"Transportation and Warehousing"</span>,<span class="dv">1</span>,<span class="st">"49"</span>,<span class="st">"Transportation and Warehousing"</span>,<span class="dv">1</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>      )</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a>      naics_table <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(naics_table, naics_missing) <span class="sc">|&gt;</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">filter</span>(depth <span class="sc">==</span> <span class="dv">4</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">level4_title =</span> title) <span class="sc">|&gt;</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">level1_code =</span> stringr<span class="sc">::</span><span class="fu">str_sub</span>(Code, <span class="at">end =</span> <span class="dv">2</span>),</span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>                      <span class="at">level2_code =</span> stringr<span class="sc">::</span><span class="fu">str_sub</span>(Code, <span class="at">end =</span> <span class="dv">3</span>),</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>                      <span class="at">level3_code =</span> stringr<span class="sc">::</span><span class="fu">str_sub</span>(Code, <span class="at">end =</span> <span class="dv">4</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">left_join</span>(naics_table, dplyr<span class="sc">::</span><span class="fu">join_by</span>(level1_code <span class="sc">==</span> Code)) <span class="sc">|&gt;</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">level1_title =</span> title) <span class="sc">|&gt;</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">left_join</span>(naics_table, dplyr<span class="sc">::</span><span class="fu">join_by</span>(level2_code <span class="sc">==</span> Code)) <span class="sc">|&gt;</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">level2_title =</span> title) <span class="sc">|&gt;</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">left_join</span>(naics_table, dplyr<span class="sc">::</span><span class="fu">join_by</span>(level3_code <span class="sc">==</span> Code)) <span class="sc">|&gt;</span></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">level3_title =</span> title) <span class="sc">|&gt;</span></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>dplyr<span class="sc">::</span><span class="fu">starts_with</span>(<span class="st">"depth"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">level4_code =</span> Code) <span class="sc">|&gt;</span></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">select</span>(level1_title, level2_title, level3_title, level4_title,</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a>                      level1_code, level2_code, level3_code, level4_code) <span class="sc">|&gt;</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>        tidyr<span class="sc">::</span><span class="fu">drop_na</span>() <span class="sc">|&gt;</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>        dplyr<span class="sc">::</span><span class="fu">mutate</span>(dplyr<span class="sc">::</span><span class="fu">across</span>(dplyr<span class="sc">::</span><span class="fu">contains</span>(<span class="st">"code"</span>), as.integer))</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>      readr<span class="sc">::</span><span class="fu">write_csv</span>(naics_table, fname)</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>      ok <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>  }, <span class="at">silent =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span>ok) {</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>    <span class="fu">message</span>(<span class="st">"BLS website unavailable; using minimal built-in NAICS mapping (sufficient for this project)."</span>)</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>    naics_min <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tribble</span>(</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>      <span class="sc">~</span>level1_title, <span class="sc">~</span>level2_title, <span class="sc">~</span>level3_title, <span class="sc">~</span>level4_title, <span class="sc">~</span>level1_code, <span class="sc">~</span>level2_code, <span class="sc">~</span>level3_code, <span class="sc">~</span>level4_code,</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Information"</span>,<span class="st">"Information"</span>,<span class="st">"Data Processing &amp; Hosting"</span>,<span class="st">"Data Processing, Hosting, and Related Services"</span>, <span class="dv">51</span>, <span class="dv">518</span>, <span class="dv">5182</span>, <span class="dv">5182</span>,</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Finance and Insurance"</span>,<span class="st">"Finance and Insurance"</span>,<span class="st">"Finance and Insurance"</span>,<span class="st">"Finance and Insurance"</span>, <span class="dv">52</span>, <span class="dv">52</span>, <span class="dv">52</span>, <span class="dv">52</span>,</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Health Care and Social Assistance"</span>,<span class="st">"Health Care and Social Assistance"</span>,<span class="st">"Health Care and Social Assistance"</span>,<span class="st">"Health Care and Social Assistance"</span>, <span class="dv">62</span>, <span class="dv">62</span>, <span class="dv">62</span>, <span class="dv">62</span></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>    readr<span class="sc">::</span><span class="fu">write_csv</span>(naics_min, fname)</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>(fname, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>INDUSTRY_CODES <span class="ot">&lt;-</span> <span class="fu">get_bls_industry_codes</span>()</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- BLS QCEW (Annual averages) ----</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>get_bls_qcew_annual_averages <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">start_year =</span> <span class="dv">2009</span>, <span class="at">end_year =</span> <span class="dv">2023</span>){</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="fu">file.path</span>(<span class="st">"data"</span>,<span class="st">"mp02"</span>), <span class="at">showWarnings =</span> <span class="cn">FALSE</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">"bls_qcew_{start_year}_{end_year}.csv.gz"</span>)</span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>  fname <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"data"</span>, <span class="st">"mp02"</span>, fname)</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>  YEARS <span class="ot">&lt;-</span> <span class="fu">setdiff</span>(<span class="fu">seq</span>(start_year, end_year), <span class="dv">2020</span>)</span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(fname)){</span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>    ALL <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>    failed_years <span class="ot">&lt;-</span> <span class="fu">c</span>()</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>(yy <span class="cf">in</span> YEARS){</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>      zip_path <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"data"</span>,<span class="st">"mp02"</span>, <span class="fu">glue</span>(<span class="st">"{yy}_qcew_annual_singlefile.zip"</span>))</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Try download if not present</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(<span class="sc">!</span><span class="fu">file.exists</span>(zip_path)){</span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>        <span class="fu">try</span>({</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>          <span class="fu">request</span>(<span class="st">"https://www.bls.gov"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>            <span class="fu">req_url_path</span>(<span class="st">"cew"</span>,<span class="st">"data"</span>,<span class="st">"files"</span>, yy, <span class="st">"csv"</span>, <span class="fu">glue</span>(<span class="st">"{yy}_annual_singlefile.zip"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>            <span class="fu">req_headers</span>(<span class="st">`</span><span class="at">User-Agent</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"Mozilla/5.0"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>            <span class="fu">req_retry</span>(<span class="at">max_tries =</span> <span class="dv">5</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>            <span class="fu">req_perform</span>(zip_path)</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>        }, <span class="at">silent =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Try read the file</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(<span class="fu">file.exists</span>(zip_path)){</span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>        got <span class="ot">&lt;-</span> <span class="fu">try</span>({</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>          readr<span class="sc">::</span><span class="fu">read_csv</span>(zip_path, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">YEAR =</span> yy) <span class="sc">|&gt;</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">select</span>(area_fips, industry_code, annual_avg_emplvl, total_annual_wages, YEAR) <span class="sc">|&gt;</span></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="fu">nchar</span>(industry_code) <span class="sc">&lt;=</span> <span class="dv">5</span>, stringr<span class="sc">::</span><span class="fu">str_starts</span>(area_fips, <span class="st">"C"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span>stringr<span class="sc">::</span><span class="fu">str_detect</span>(industry_code, <span class="st">"-"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">FIPS =</span> area_fips,</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>                          <span class="at">INDUSTRY =</span> <span class="fu">as.integer</span>(industry_code),</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>                          <span class="at">EMPLOYMENT =</span> <span class="fu">as.integer</span>(annual_avg_emplvl),</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>                          <span class="at">TOTAL_WAGES =</span> total_annual_wages) <span class="sc">|&gt;</span></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>area_fips, <span class="sc">-</span>industry_code, <span class="sc">-</span>annual_avg_emplvl, <span class="sc">-</span>total_annual_wages) <span class="sc">|&gt;</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">filter</span>(INDUSTRY <span class="sc">!=</span> <span class="dv">10</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>            dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">AVG_WAGE =</span> TOTAL_WAGES <span class="sc">/</span> EMPLOYMENT)</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>        }, <span class="at">silent =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(<span class="fu">inherits</span>(got, <span class="st">"try-error"</span>)){</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>          failed_years <span class="ot">&lt;-</span> <span class="fu">c</span>(failed_years, yy)</span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>        } <span class="cf">else</span> {</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>          ALL[[<span class="fu">as.character</span>(yy)]] <span class="ot">&lt;-</span> got</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>      } <span class="cf">else</span> {</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>        failed_years <span class="ot">&lt;-</span> <span class="fu">c</span>(failed_years, yy)</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>    } <span class="co"># end years loop</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(<span class="fu">length</span>(ALL) <span class="sc">==</span> <span class="dv">0</span>){</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="fu">interactive</span>()) <span class="fu">message</span>(<span class="st">"BLS QCEW could not be downloaded (years failed: "</span>,</span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>              <span class="fu">paste</span>(YEARS, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"). Creating an empty placeholder so the report can still knit."</span>)</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>      empty <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(<span class="at">FIPS=</span><span class="fu">character</span>(), <span class="at">INDUSTRY=</span><span class="fu">integer</span>(), <span class="at">EMPLOYMENT=</span><span class="fu">integer</span>(),</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>                              <span class="at">TOTAL_WAGES=</span><span class="fu">double</span>(), <span class="at">YEAR=</span><span class="fu">integer</span>(), <span class="at">AVG_WAGE=</span><span class="fu">double</span>())</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>      readr<span class="sc">::</span><span class="fu">write_csv</span>(empty, fname)</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>      out <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(ALL)</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>      readr<span class="sc">::</span><span class="fu">write_csv</span>(out, fname)</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span>(<span class="fu">length</span>(failed_years) <span class="sc">&gt;</span> <span class="dv">0</span>){</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (<span class="fu">interactive</span>()) <span class="fu">message</span>(<span class="st">"Some years failed to download: "</span>, <span class="fu">paste</span>(failed_years, <span class="at">collapse =</span> <span class="st">", "</span>),</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>                <span class="st">". Proceeding with available years."</span>)</span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Read whatever we have (possibly empty) and return</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>  readr<span class="sc">::</span><span class="fu">read_csv</span>(fname, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>WAGES <span class="ot">&lt;-</span> <span class="fu">get_bls_qcew_annual_averages</span>()</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="co"># ---- Standardize Keys ----</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>standardize_cbsa <span class="ot">&lt;-</span> <span class="cf">function</span>(df){</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>  df <span class="sc">|&gt;</span></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">CBSA =</span> <span class="fu">as.integer</span>(GEOID)) <span class="sc">|&gt;</span></span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">relocate</span>(CBSA)</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>INCOME <span class="ot">&lt;-</span> <span class="fu">standardize_cbsa</span>(INCOME)</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>RENT   <span class="ot">&lt;-</span> <span class="fu">standardize_cbsa</span>(RENT)</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>POP    <span class="ot">&lt;-</span> <span class="fu">standardize_cbsa</span>(POP)</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>HH     <span class="ot">&lt;-</span> <span class="fu">standardize_cbsa</span>(HH)</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="co"># Map BLS area_fips "C1234" -&gt; CBSA integer "12340"</span></span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>BLS <span class="ot">&lt;-</span> WAGES <span class="sc">|&gt;</span></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">CBSA =</span> <span class="fu">as.integer</span>(<span class="fu">paste0</span>(stringr<span class="sc">::</span><span class="fu">str_remove</span>(FIPS, <span class="st">"^C"</span>), <span class="st">"0"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>    <span class="at">INDUSTRY   =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.integer</span>(INDUSTRY)),</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>    <span class="at">EMPLOYMENT =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(EMPLOYMENT)),</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>    <span class="at">TOTAL_WAGES=</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(TOTAL_WAGES)),</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>    <span class="at">AVG_WAGE   =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.numeric</span>(AVG_WAGE))</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(CBSA), <span class="sc">!</span><span class="fu">is.na</span>(INDUSTRY)) <span class="sc">|&gt;</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">relocate</span>(CBSA)</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a><span class="co"># CBSA -&gt; NAME dictionary from ACS</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>CBSA_NAMES <span class="ot">&lt;-</span> INCOME <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">distinct</span>(CBSA, NAME)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+</section>
+<section id="task-2-multitable-questions" class="level1">
+<h1>2) Task 2 — Multi‑Table Questions</h1>
+<p>All answers are produced programmatically with code below.</p>
+<p><strong>Q1.</strong> <em>Which CBSA had the highest number of permitted new housing units from 2010 to 2019?</em></p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>q1 <span class="ot">&lt;-</span> PERMITS <span class="sc">|&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(dplyr<span class="sc">::</span><span class="fu">between</span>(year, <span class="dv">2010</span>, <span class="dv">2019</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(CBSA) <span class="sc">|&gt;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">permits_2010_2019 =</span> <span class="fu">sum</span>(new_housing_units_permitted, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(CBSA_NAMES, <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(permits_2010_2019))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">head</span>(q1, <span class="dv">10</span>), <span class="at">caption =</span> <span class="st">"Top 10 CBSAs by total permits (2010–2019)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-246bccf8506d491569d7" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-246bccf8506d491569d7">{"x":{"filter":"none","vertical":false,"caption":"<caption>Top 10 CBSAs by total permits (2010–2019)<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10"],[26420,26420,26420,19100,35620,35620,35620,12060,12060,12060],[482075,482075,482075,460826,446020,446020,446020,254377,254377,254377],["Houston-Sugar Land-Baytown, TX Metro Area","Houston-The Woodlands-Sugar Land, TX Metro Area","Houston-Pasadena-The Woodlands, TX Metro Area","Dallas-Fort Worth-Arlington, TX Metro Area","New York-Northern New Jersey-Long Island, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ Metro Area","Atlanta-Sandy Springs-Marietta, GA Metro Area","Atlanta-Sandy Springs-Roswell, GA Metro Area","Atlanta-Sandy Springs-Alpharetta, GA Metro Area"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>CBSA<\/th>\n      <th>permits_2010_2019<\/th>\n      <th>NAME<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"CBSA","targets":1},{"name":"permits_2010_2019","targets":2},{"name":"NAME","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Q2.</strong> <em>For Albuquerque, NM (CBSA 10740), which year had the highest number of permitted units?</em></p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>q2 <span class="ot">&lt;-</span> PERMITS <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(CBSA <span class="sc">==</span> <span class="dv">10740</span>L) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(new_housing_units_permitted))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">head</span>(q2, <span class="dv">5</span>), <span class="at">caption =</span> <span class="st">"Albuquerque (CBSA 10740): highest permit years"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-b623291bb1758fef2aaa" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b623291bb1758fef2aaa">{"x":{"filter":"none","vertical":false,"caption":"<caption>Albuquerque (CBSA 10740): highest permit years<\/caption>","data":[["1","2","3","4","5"],[10740,10740,10740,10740,10740],[4021,2852,2834,2606,2543],[2021,2022,2023,2013,2014]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>CBSA<\/th>\n      <th>new_housing_units_permitted<\/th>\n      <th>year<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"CBSA","targets":1},{"name":"new_housing_units_permitted","targets":2},{"name":"year","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Q3.</strong> <em>Which US state had the highest individual income in 2015 (i.e., total household income divided by population), when aggregating CBSA data up to state level?</em></p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>state_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">abb  =</span> <span class="fu">c</span>(state.abb, <span class="st">"DC"</span>, <span class="st">"PR"</span>),</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(state.name, <span class="st">"District of Columbia"</span>, <span class="st">"Puerto Rico"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>state_totals <span class="ot">&lt;-</span> INCOME <span class="sc">|&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2015</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, NAME, household_income) <span class="sc">|&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(HH <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2015</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, households), <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(POP <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2015</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, population), <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">total_income_cbsa =</span> household_income <span class="sc">*</span> households,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">state =</span> stringr<span class="sc">::</span><span class="fu">str_extract</span>(NAME, <span class="st">",</span><span class="sc">\\</span><span class="st">s(.{2})"</span>) <span class="sc">|&gt;</span> stringr<span class="sc">::</span><span class="fu">str_remove</span>(<span class="st">",</span><span class="sc">\\</span><span class="st">s"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(state_df, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"state"</span> <span class="ot">=</span> <span class="st">"abb"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(state, name) <span class="sc">|&gt;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">total_income_state =</span> <span class="fu">sum</span>(total_income_cbsa, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>                   <span class="at">population_state   =</span> <span class="fu">sum</span>(population, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">individual_income =</span> total_income_state <span class="sc">/</span> population_state) <span class="sc">|&gt;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(individual_income))</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">head</span>(state_totals, <span class="dv">10</span>), <span class="at">caption =</span> <span class="st">"2015: States by highest individual income (CBSA-aggregated)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-e8c470bbe98312edd955" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-e8c470bbe98312edd955">{"x":{"filter":"none","vertical":false,"caption":"<caption>2015: States by highest individual income (CBSA-aggregated)<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10"],["DC","MA","CT","AK","VT","NH","MN","MD","WA","CO"],["District of Columbia","Massachusetts","Connecticut","Alaska","Vermont","New Hampshire","Minnesota","Maryland","Washington","Colorado"],[202663489140,186566282228,94480626751,13197939163,5715539271,22249129392,116902131752,93826139111,161492961867,123095455889],[6098283,6754601,3474313,499421,216661,847504,4469143,3665585,6350174,4840469],[33232.87704752305,27620.62218449321,27194.04577279019,26426.48019006009,26380.10196112821,26252.53614378221,26157.61718790381,25596.4979971819,25431.26564201233,25430.48119696666]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>state<\/th>\n      <th>name<\/th>\n      <th>total_income_state<\/th>\n      <th>population_state<\/th>\n      <th>individual_income<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"state","targets":1},{"name":"name","targets":2},{"name":"total_income_state","targets":3},{"name":"population_state","targets":4},{"name":"individual_income","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<p><strong>Q4.</strong> <em>Data-centric professions (e.g., NAICS 5182): In which years did the <strong>New York</strong> CBSA lead the nation in employment for this industry?</em></p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Choose the deepest available NAICS target: prefer 5182, then 518, then 51</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>available_codes <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(BLS<span class="sc">$</span>INDUSTRY))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>candidate_codes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5182</span>L, <span class="dv">518</span>L, <span class="dv">51</span>L)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>target <span class="ot">&lt;-</span> candidate_codes[candidate_codes <span class="sc">%in%</span> available_codes][<span class="dv">1</span>]</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">is.na</span>(target)) {</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># No relevant industry present; create diagnostics and empty outputs</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  diag_codes <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(<span class="at">INDUSTRY =</span> available_codes[<span class="dv">1</span><span class="sc">:</span><span class="fu">min</span>(<span class="dv">20</span>, <span class="fu">length</span>(available_codes))])</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  ds_yearly_top <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(<span class="at">YEAR =</span> <span class="fu">character</span>(), <span class="at">CBSA =</span> <span class="fu">integer</span>(), <span class="at">EMP =</span> <span class="fu">double</span>(), <span class="at">NAME =</span> <span class="fu">character</span>())</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  nyc_last_top  <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(<span class="at">YEAR =</span> <span class="fu">character</span>(), <span class="at">last_year =</span> <span class="fu">character</span>())</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">note =</span> <span class="st">"No NAICS 51/518/5182 found in BLS cache; likely offline or empty download."</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">sample_codes =</span> diag_codes,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">ds_yearly_top =</span> ds_yearly_top,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">nyc_last_top =</span> nyc_last_top)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Coerce YEAR to numeric if needed</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  BLS2 <span class="ot">&lt;-</span> BLS <span class="sc">|&gt;</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">YEAR =</span> <span class="fu">suppressWarnings</span>(<span class="fu">as.integer</span>(YEAR))) <span class="sc">|&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(YEAR))</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  ds_yearly_top <span class="ot">&lt;-</span> BLS2 <span class="sc">|&gt;</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(INDUSTRY <span class="sc">==</span> target) <span class="sc">|&gt;</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">group_by</span>(YEAR, CBSA) <span class="sc">|&gt;</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">EMP =</span> <span class="fu">sum</span>(EMPLOYMENT, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">group_by</span>(YEAR) <span class="sc">|&gt;</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">slice_max</span>(EMP, <span class="at">n =</span> <span class="dv">1</span>, <span class="at">with_ties =</span> <span class="cn">FALSE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">left_join</span>(CBSA_NAMES, <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">arrange</span>(YEAR)</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  nyc_last_top <span class="ot">&lt;-</span> ds_yearly_top <span class="sc">|&gt;</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(NAME, <span class="st">"^New York"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">last_year =</span> <span class="fu">max</span>(YEAR, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">YEAR =</span> <span class="fu">as.character</span>(last_year))</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list</span>(<span class="at">naics_target_used =</span> target,</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>       <span class="at">ds_yearly_top =</span> ds_yearly_top,</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>       <span class="at">nyc_last_top =</span> nyc_last_top)</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>$note
+[1] "No NAICS 51/518/5182 found in BLS cache; likely offline or empty download."
+
+$sample_codes
+# A tibble: 1 × 1
+  INDUSTRY
+     &lt;int&gt;
+1       NA
+
+$ds_yearly_top
+# A tibble: 0 × 4
+# ℹ 4 variables: YEAR &lt;chr&gt;, CBSA &lt;int&gt;, EMP &lt;dbl&gt;, NAME &lt;chr&gt;
+
+$nyc_last_top
+# A tibble: 0 × 2
+# ℹ 2 variables: YEAR &lt;chr&gt;, last_year &lt;chr&gt;</code></pre>
+</div>
+</div>
+<p><strong>Q5.</strong> <em>For the New York CBSA, what share of total annual wages is in <strong>Finance and Insurance</strong> (NAICS 52) by year, and which year has the highest share?</em></p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>finance_share <span class="ot">&lt;-</span> BLS <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">is_finance =</span> (INDUSTRY <span class="sc">==</span> <span class="dv">52</span>L)) <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(YEAR, CBSA) <span class="sc">|&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">finance_wages =</span> <span class="fu">sum</span>(<span class="fu">ifelse</span>(is_finance, TOTAL_WAGES, <span class="dv">0</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>                   <span class="at">total_wages   =</span> <span class="fu">sum</span>(TOTAL_WAGES, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">finance_share =</span> finance_wages <span class="sc">/</span> total_wages) <span class="sc">|&gt;</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(CBSA_NAMES, <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(NAME, <span class="st">"^New York"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(finance_share))</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">head</span>(finance_share, <span class="dv">10</span>), <span class="at">caption =</span> <span class="st">"NYC: Highest Finance &amp; Insurance wage shares by year"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-bd0e058e047aced0c040" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bd0e058e047aced0c040">{"x":{"filter":"none","vertical":false,"caption":"<caption>NYC: Highest Finance &amp; Insurance wage shares by year<\/caption>","data":[[],[],[],[],[],[],[]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>YEAR<\/th>\n      <th>CBSA<\/th>\n      <th>finance_wages<\/th>\n      <th>total_wages<\/th>\n      <th>finance_share<\/th>\n      <th>NAME<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"YEAR","targets":1},{"name":"CBSA","targets":2},{"name":"finance_wages","targets":3},{"name":"total_wages","targets":4},{"name":"finance_share","targets":5},{"name":"NAME","targets":6}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="task-3-initial-visualizations" class="level1">
+<h1>3) Task 3 — Initial Visualizations</h1>
+<p><strong>(A)</strong> 2009 CBSA‑level scatter: <em>Monthly Rent vs Household Income</em></p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>viz_2009 <span class="ot">&lt;-</span> RENT <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2009</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(INCOME <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2009</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, household_income), <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(CBSA_NAMES, <span class="at">by =</span> <span class="st">"CBSA"</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(viz_2009, <span class="fu">aes</span>(<span class="at">x =</span> household_income, <span class="at">y =</span> monthly_rent)) <span class="sc">+</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_dollar</span>()) <span class="sc">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_dollar</span>()) <span class="sc">+</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Monthly Rent vs Household Income (CBSA, 2009)"</span>,</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Average Household Income (USD)"</span>,</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Median Gross Rent (USD)"</span>,</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Source: ACS 1-year via tidycensus"</span>) <span class="sc">+</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="mp02_files/figure-html/viz-1-1.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>(B)</strong> Across years: <em>Total Employment vs Health/Social Services Employment (NAICS 62)</em></p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>employment_health <span class="ot">&lt;-</span> BLS <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">is_health =</span> (INDUSTRY <span class="sc">==</span> <span class="dv">62</span>L)) <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(YEAR, CBSA) <span class="sc">|&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">emp_total =</span> <span class="fu">sum</span>(EMPLOYMENT, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>                   <span class="at">emp_health =</span> <span class="fu">sum</span>(<span class="fu">ifelse</span>(is_health, EMPLOYMENT, <span class="dv">0</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(CBSA_NAMES, <span class="at">by =</span> <span class="st">"CBSA"</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(employment_health, <span class="fu">aes</span>(<span class="at">x =</span> emp_total, <span class="at">y =</span> emp_health, <span class="at">color =</span> <span class="fu">as.factor</span>(YEAR))) <span class="sc">+</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">scale_cut =</span> <span class="fu">cut_si</span>(<span class="st">""</span>))) <span class="sc">+</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_number</span>(<span class="at">scale_cut =</span> <span class="fu">cut_si</span>(<span class="st">""</span>))) <span class="sc">+</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Total Employment vs Health/Social Services Employment by CBSA"</span>,</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Total Employment"</span>, <span class="at">y =</span> <span class="st">"Health &amp; Social Services Employment"</span>,</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Year"</span>) <span class="sc">+</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="mp02_files/figure-html/viz-2-1.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>(C)</strong> Household size over time for large CBSAs (highlight NYC/LA)</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gghighlight)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>household_size <span class="ot">&lt;-</span> POP <span class="sc">|&gt;</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(HH, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"CBSA"</span>,<span class="st">"NAME"</span>,<span class="st">"year"</span>), <span class="at">suffix =</span> <span class="fu">c</span>(<span class="st">".pop"</span>,<span class="st">".hh"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">hh_size =</span> population <span class="sc">/</span> households) <span class="sc">|&gt;</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, NAME, year, hh_size)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>top_cbsa <span class="ot">&lt;-</span> POP <span class="sc">|&gt;</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2019</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(population)) <span class="sc">|&gt;</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">25</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">pull</span>(CBSA)</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>plot_data <span class="ot">&lt;-</span> household_size <span class="sc">|&gt;</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(CBSA <span class="sc">%in%</span> top_cbsa)</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plot_data, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> hh_size, <span class="at">group =</span> NAME)) <span class="sc">+</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  gghighlight<span class="sc">::</span><span class="fu">gghighlight</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(NAME, <span class="st">"^New York|^Los Angeles"</span>),</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>                           <span class="at">use_direct_label =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Average Household Size over Time (Selected Large CBSAs)"</span>,</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">y =</span> <span class="st">"Avg Household Size"</span>) <span class="sc">+</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="mp02_files/figure-html/viz-3-1.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="task-4-rent-burden-metric" class="level1">
+<h1>4) Task 4 — Rent Burden Metric</h1>
+<p>We define <strong>Rent Burden</strong> for each CBSA‑year as<br>
+<code>rent_to_income = (monthly_rent * 12) / household_income</code>.<br>
+For comparability, we also create: - <code>rb_multiple</code>: multiple of the all‑CBSA mean; - <code>rb_scaled</code>: min–max scaling to 0–100 within the working dataset.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>rent_base <span class="ot">&lt;-</span> RENT <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(INCOME, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"CBSA"</span>,<span class="st">"NAME"</span>,<span class="st">"year"</span>), <span class="at">suffix =</span> <span class="fu">c</span>(<span class="st">".rent"</span>,<span class="st">".inc"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">rent_to_income =</span> (monthly_rent <span class="sc">*</span> <span class="dv">12</span>) <span class="sc">/</span> household_income)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>base_mu <span class="ot">&lt;-</span> <span class="fu">mean</span>(rent_base<span class="sc">$</span>rent_to_income, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>RENT_BURDEN <span class="ot">&lt;-</span> rent_base <span class="sc">|&gt;</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">rb_multiple =</span> rent_to_income <span class="sc">/</span> base_mu,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">rb_scaled   =</span> scales<span class="sc">::</span><span class="fu">rescale</span>(rent_to_income, <span class="at">to =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">100</span>),</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>                                 <span class="at">from =</span> <span class="fu">range</span>(rent_to_income, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, NAME, year, rent_to_income, rb_multiple, rb_scaled)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Example views</span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>rb_nyc <span class="ot">&lt;-</span> RENT_BURDEN <span class="sc">|&gt;</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(NAME, <span class="st">"^New York"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(year)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(rb_nyc, <span class="at">caption =</span> <span class="st">"Rent Burden — NYC Over Time"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-5e46c6bcc89d05c38d65" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5e46c6bcc89d05c38d65">{"x":{"filter":"none","vertical":false,"caption":"<caption>Rent Burden — NYC Over Time<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14"],[35620,35620,35620,35620,35620,35620,35620,35620,35620,35620,35620,35620,35620,35620],["New York-Northern New Jersey-Long Island, NY-NJ-PA Metro Area","New York-Northern New Jersey-Long Island, NY-NJ-PA Metro Area","New York-Northern New Jersey-Long Island, NY-NJ-PA Metro Area","New York-Northern New Jersey-Long Island, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Newark-Jersey City, NY-NJ Metro Area"],[2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2021,2022,2023],[0.2146707586623627,0.2228430248518417,0.2285549244247617,0.226751273795755,0.2256407138296902,0.2292070497718665,0.228328702558806,0.2246547143830758,0.2195626791211124,0.2192716430082316,0.2138528138528139,0.2274638960300442,0.2208339704244119,0.2223062381852552],[1.091678553432593,1.133237486692005,1.162284564654426,1.153112347991845,1.147464748361564,1.165600858219605,1.161134144537032,1.1424505840838,1.116555740634017,1.115075716597739,1.087519007847345,1.156736290138042,1.123020717324951,1.130507732088573],[35.37090174586488,38.52847000739394,40.73541143420564,40.03852395538485,39.60943013733403,40.98737707639282,40.64800471403232,39.22846352582999,37.26102284818027,37.14857345266569,35.05486742803529,40.31386414833502,37.75221941194666,38.32106847367891]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>CBSA<\/th>\n      <th>NAME<\/th>\n      <th>year<\/th>\n      <th>rent_to_income<\/th>\n      <th>rb_multiple<\/th>\n      <th>rb_scaled<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,3,4,5,6]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"CBSA","targets":1},{"name":"NAME","targets":2},{"name":"year","targets":3},{"name":"rent_to_income","targets":4},{"name":"rb_multiple","targets":5},{"name":"rb_scaled","targets":6}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>rb_2019 <span class="ot">&lt;-</span> RENT_BURDEN <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2019</span>) <span class="sc">|&gt;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(rb_scaled))</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">head</span>(rb_2019, <span class="dv">15</span>), <span class="at">caption =</span> <span class="st">"2019 Highest Rent Burden (Top 15)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-09a4e0d39f43ae749f6e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-09a4e0d39f43ae749f6e">{"x":{"filter":"none","vertical":false,"caption":"<caption>2019 Highest Rent Burden (Top 15)<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],[41900,10380,49500,33100,32420,11640,38660,25020,41980,28580,42200,24420,46380,42020,41500],["San Germán, PR Metro Area","Aguadilla-Isabela, PR Metro Area","Yauco, PR Metro Area","Miami-Fort Lauderdale-Pompano Beach, FL Metro Area","Mayagüez, PR Metro Area","Arecibo, PR Metro Area","Ponce, PR Metro Area","Guayama, PR Metro Area","San Juan-Bayamón-Caguas, PR Metro Area","Key West, FL Micro Area","Santa Maria-Santa Barbara, CA Metro Area","Grants Pass, OR Metro Area","Ukiah, CA Micro Area","San Luis Obispo-Paso Robles, CA Metro Area","Salinas, CA Metro Area"],[2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019],[0.313625613971257,0.2972227331248851,0.295125836253584,0.2869257245473138,0.2804521783310047,0.2780357981526901,0.2771932009214868,0.2730711498048634,0.2712538358473441,0.2694309583169313,0.2633074696310788,0.2625859205852059,0.2597402597402597,0.2568821588041157,0.256676213329205],[1.594899830386534,1.5114852407793,1.500821760771947,1.459121222975058,1.42620089599138,1.413912727663086,1.409627815585549,1.388665692806413,1.379423993170005,1.370154000750517,1.339013843086815,1.335344504870761,1.320873288883415,1.306338810526996,1.305291503201409],[73.60469188474011,67.26701090895081,66.4568200934529,63.28849299000569,60.78726951071246,59.85363798404278,59.52807855991084,57.93541656426918,57.23324990199327,56.52893360817308,54.16296398897826,53.88417468946697,52.78467937705952,51.68037751084849,51.60080510337839]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>CBSA<\/th>\n      <th>NAME<\/th>\n      <th>year<\/th>\n      <th>rent_to_income<\/th>\n      <th>rb_multiple<\/th>\n      <th>rb_scaled<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,3,4,5,6]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"CBSA","targets":1},{"name":"NAME","targets":2},{"name":"year","targets":3},{"name":"rent_to_income","targets":4},{"name":"rb_multiple","targets":5},{"name":"rb_scaled","targets":6}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">tail</span>(rb_2019, <span class="dv">15</span>), <span class="at">caption =</span> <span class="st">"2019 Lowest Rent Burden (Bottom 15)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-8bc66f1a9f65e59c4caf" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8bc66f1a9f65e59c4caf">{"x":{"filter":"none","vertical":false,"caption":"<caption>2019 Lowest Rent Burden (Bottom 15)<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"],[19340,16220,16940,14010,16300,31940,11540,41400,27620,33220,33500,48140,22540,22060,47700],["Davenport-Moline-Rock Island, IA-IL Metro Area","Casper, WY Metro Area","Cheyenne, WY Metro Area","Bloomington, IL Metro Area","Cedar Rapids, IA Metro Area","Marinette, WI-MI Micro Area","Appleton, WI Metro Area","Salem, OH Micro Area","Jefferson City, MO Metro Area","Midland, MI Metro Area","Minot, ND Micro Area","Wausau-Weston, WI Metro Area","Fond du Lac, WI Metro Area","Faribault-Northfield, MN Micro Area","Warsaw, IN Micro Area"],[2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019,2019],[0.1438041321914163,0.1433711597010794,0.1430130230844446,0.1421842288904396,0.141929846461116,0.1418367546623354,0.1410111948489061,0.1409734414104815,0.1401638535189024,0.1394550034348523,0.1384298389470586,0.1382615909300396,0.1379479251174823,0.1342919041245222,0.1288007613223295],[0.7312960926144002,0.7290942706947673,0.7272730162956336,0.7230582976611889,0.7217646708803775,0.7212912653692474,0.7170929947314004,0.7169010048241429,0.7127839571933302,0.7091791977972289,0.7039658651009703,0.7031102630013569,0.7015151587466015,0.6829229679247895,0.6549985180912754],[7.989731656915376,7.822441438767215,7.6840660129357,7.363839752354679,7.265552463798524,7.229584018519937,6.910607445261226,6.896020419316491,6.583215014781397,6.309332290493709,5.913233243491106,5.848226232426281,5.727033262019498,4.314434163654762,2.192787874887359]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>CBSA<\/th>\n      <th>NAME<\/th>\n      <th>year<\/th>\n      <th>rent_to_income<\/th>\n      <th>rb_multiple<\/th>\n      <th>rb_scaled<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,3,4,5,6]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"CBSA","targets":1},{"name":"NAME","targets":2},{"name":"year","targets":3},{"name":"rent_to_income","targets":4},{"name":"rb_multiple","targets":5},{"name":"rb_scaled","targets":6}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="task-5-housing-growth-metric" class="level1">
+<h1>5) Task 5 — Housing Growth Metric</h1>
+<p>Two components: 1. <strong>Instantaneous growth</strong>: <code>HG_inst = permits / population</code> 2. <strong>Rate‑based growth</strong>: <code>HG_rate = permits / max(pop_t − pop_{t−5}, ε)</code> with ε&gt;0 to avoid division by zero.</p>
+<p>We scale each to 0–100 and define a composite:<br>
+<code>HG_composite = 0.5 * HG_inst_scaled + 0.5 * HG_rate_scaled</code>.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 5‑year population change</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>POP_GROWTH_5Y <span class="ot">&lt;-</span> POP <span class="sc">|&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(CBSA, year) <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(CBSA) <span class="sc">|&gt;</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">pop_lag5 =</span> dplyr<span class="sc">::</span><span class="fu">lag</span>(population, <span class="dv">5</span>),</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>                <span class="at">pop_growth_5y =</span> population <span class="sc">-</span> pop_lag5) <span class="sc">|&gt;</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, year, pop_growth_5y)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>HG <span class="ot">&lt;-</span> PERMITS <span class="sc">|&gt;</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(POP <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, year, population), <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"CBSA"</span>,<span class="st">"year"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(POP_GROWTH_5Y, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"CBSA"</span>,<span class="st">"year"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">HG_inst_raw  =</span> new_housing_units_permitted <span class="sc">/</span> <span class="fu">pmax</span>(population, <span class="dv">1</span>),</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">HG_rate_raw  =</span> new_housing_units_permitted <span class="sc">/</span> <span class="fu">pmax</span>(pop_growth_5y, <span class="dv">1</span>),</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">HG_inst_scaled =</span> scales<span class="sc">::</span><span class="fu">rescale</span>(HG_inst_raw, <span class="at">to =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">100</span>),</span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">from =</span> <span class="fu">range</span>(HG_inst_raw, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>                <span class="at">HG_rate_scaled =</span> scales<span class="sc">::</span><span class="fu">rescale</span>(HG_rate_raw, <span class="at">to =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">100</span>),</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>                                   <span class="at">from =</span> <span class="fu">range</span>(HG_rate_raw, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)),</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>                <span class="at">HG_composite   =</span> <span class="fl">0.5</span><span class="sc">*</span>HG_inst_scaled <span class="sc">+</span> <span class="fl">0.5</span><span class="sc">*</span>HG_rate_scaled) <span class="sc">|&gt;</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(CBSA_NAMES, <span class="at">by =</span> <span class="st">"CBSA"</span>)</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>HG_rank <span class="ot">&lt;-</span> HG <span class="sc">|&gt;</span></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">2014</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(CBSA, NAME) <span class="sc">|&gt;</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">HG_inst =</span> <span class="fu">mean</span>(HG_inst_scaled, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>                   <span class="at">HG_rate =</span> <span class="fu">mean</span>(HG_rate_scaled, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a>                   <span class="at">HG_comp =</span> <span class="fu">mean</span>(HG_composite, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(HG_comp))</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">head</span>(HG_rank, <span class="dv">20</span>), <span class="at">caption =</span> <span class="st">"Housing Growth — Leaders (2014–2023 avg)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-4ef14f662455a07ea2a4" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-4ef14f662455a07ea2a4">{"x":{"filter":"none","vertical":false,"caption":"<caption>Housing Growth — Leaders (2014–2023 avg)<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[45540,45540,34820,34820,34820,35620,35620,35620,31080,41100,12420,12420,12420,35840,35840,39460,19300,19300,41540,41540],["The Villages, FL Metro Area","The Villages, FL Micro Area","Myrtle Beach-Conway-North Myrtle Beach, SC Metro Area","Myrtle Beach-Conway-North Myrtle Beach, SC-NC Metro Area","Myrtle Beach-North Myrtle Beach-Conway, SC Metro Area","New York-Newark-Jersey City, NY-NJ Metro Area","New York-Newark-Jersey City, NY-NJ-PA Metro Area","New York-Northern New Jersey-Long Island, NY-NJ-PA Metro Area","Los Angeles-Long Beach-Anaheim, CA Metro Area","St. George, UT Metro Area","Austin-Round Rock, TX Metro Area","Austin-Round Rock-Georgetown, TX Metro Area","Austin-Round Rock-San Marcos, TX Metro Area","North Port-Bradenton-Sarasota, FL Metro Area","North Port-Sarasota-Bradenton, FL Metro Area","Punta Gorda, FL Metro Area","Daphne-Fairhope-Foley, AL Metro Area","Daphne-Fairhope-Foley, AL Micro Area","Salisbury, MD Metro Area","Salisbury, MD-DE Metro Area"],[53.52100360731885,53.52100360731885,50.34115628759009,50.34115628759009,50.34115628759009,7.774337927099232,7.774337927099232,7.774337927099232,6.17775935271481,41.0729956106941,37.57399373005693,37.57399373005693,37.57399373005693,33.96294900050145,33.96294900050145,34.93255893777348,34.0610897033301,34.0610897033301,33.0327497820419,33.0327497820419],[0.0001759915559661443,0.0001759915559661443,2.098935673180165,2.098935673180165,2.098935673180165,39.92083899215618,39.92083899215618,39.92083899215618,35.93972415352527,0.0001569550104160043,0.0001454129988221899,0.0001454129988221899,0.0001454129988221899,0.0001796912528713836,0.0001796912528713836,0.0001725770898091029,0.0001527853663277086,0.0001527853663277086,0.7796761446881162,0.7796761446881162],[26.76058979943741,26.76058979943741,26.22004598038513,26.22004598038513,26.22004598038513,23.8475884596277,23.8475884596277,23.8475884596277,21.08621089802857,20.53657628285226,18.78706957152788,18.78706957152788,18.78706957152788,17.85609945030971,17.85609945030971,17.46636575743165,17.03062124434822,17.03062124434822,16.906212963365,16.906212963365]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>CBSA<\/th>\n      <th>NAME<\/th>\n      <th>HG_inst<\/th>\n      <th>HG_rate<\/th>\n      <th>HG_comp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"CBSA","targets":1},{"name":"NAME","targets":2},{"name":"HG_inst","targets":3},{"name":"HG_rate","targets":4},{"name":"HG_comp","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>DT<span class="sc">::</span><span class="fu">datatable</span>(<span class="fu">tail</span>(HG_rank, <span class="dv">20</span>), <span class="at">caption =</span> <span class="st">"Housing Growth — Laggards (2014–2023 avg)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-48fce4989eab578e5a3c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-48fce4989eab578e5a3c">{"x":{"filter":"none","vertical":false,"caption":"<caption>Housing Growth — Laggards (2014–2023 avg)<\/caption>","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"],[19060,19060,11500,11500,38220,38220,12980,27780,34060,21420,48540,19500,19180,19180,21820,21820,48260,19430,19430,39150],["Cumberland, MD-WV Metro Area","Cumberland, MD-WV Micro Area","Anniston-Oxford, AL Metro Area","Anniston-Oxford-Jacksonville, AL Metro Area","Pine Bluff, AR Metro Area","Pine Bluff, AR Micro Area","Battle Creek, MI Metro Area","Johnstown, PA Metro Area","Morgantown, WV Metro Area","Enid, OK Metro Area","Wheeling, WV-OH Metro Area","Decatur, IL Metro Area","Danville, IL Metro Area","Danville, IL Micro Area","Fairbanks, AK Metro Area","Fairbanks-College, AK Metro Area","Weirton-Steubenville, WV-OH Metro Area","Dayton-Kettering, OH Metro Area","Dayton-Kettering-Beavercreek, OH Metro Area","Prescott Valley-Prescott, AZ Metro Area"],[1.908868742706331,1.908868742706331,1.733438107700416,1.733438107700416,1.613330707553888,1.613330707553888,1.438242837058745,1.426182164386936,1.439147253366384,1.92043261461618,0.9349846555069045,0.9222693056644808,0.7784704394000976,0.7784704394000976,0.6364473582476905,0.6364473582476905,0.6382313304520452,5.885519035293343,5.885519035293343,23.41014763142092],[0.09526572328670661,0.09526572328670661,0.06090438295780072,0.06090438295780072,0.07789143415111835,0.07789143415111835,0.1094312970148079,0.1079976668846402,2.119969129371181e-05,0.03298724094127269,0.06723596138200215,0.04816161115496932,0.03551969919282837,0.03551969919282837,0.02581730062664984,0.02581730062664984,0.03894448228156233,null,null,null],[1.002067232996519,1.002067232996519,0.8971712453291083,0.8971712453291083,0.8456110708525031,0.8456110708525031,0.7738370670367762,0.7670899156357879,0.7195842265288387,0.579336889789448,0.5011103084444533,0.485215458409725,0.406995069296463,0.406995069296463,0.3311323294371702,0.3311323294371702,0.2928551901230464,null,null,null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>CBSA<\/th>\n      <th>NAME<\/th>\n      <th>HG_inst<\/th>\n      <th>HG_rate<\/th>\n      <th>HG_comp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"CBSA","targets":1},{"name":"NAME","targets":2},{"name":"HG_inst","targets":3},{"name":"HG_rate","targets":4},{"name":"HG_comp","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="task-6-linking-the-metrics-rent-burden-vs-housing-growth" class="level1">
+<h1>6) Task 6 — Linking the Metrics (Rent Burden vs Housing Growth)</h1>
+<p>Scatter for a single year (example: 2019). Then a trajectory plot for selected CBSAs.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>RB_2019 <span class="ot">&lt;-</span> RENT_BURDEN <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2019</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, rb_scaled)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>HG_2019 <span class="ot">&lt;-</span> HG           <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">2019</span>) <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, HG_inst_scaled, HG_rate_scaled, HG_composite)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>P_2019 <span class="ot">&lt;-</span> CBSA_NAMES <span class="sc">|&gt;</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(RB_2019, <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">left_join</span>(HG_2019, <span class="at">by =</span> <span class="st">"CBSA"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">drop_na</span>()</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(P_2019, <span class="fu">aes</span>(<span class="at">x =</span> rb_scaled, <span class="at">y =</span> HG_composite)) <span class="sc">+</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.6</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Rent Burden (scaled) vs Housing Growth Composite — 2019"</span>,</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Rent Burden (0–100 scaled)"</span>, <span class="at">y =</span> <span class="st">"Housing Growth Composite (0–100)"</span>) <span class="sc">+</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="mp02_files/figure-html/rb-hg-plots-1.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>focus_names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"^New York"</span>,<span class="st">"^Los Angeles"</span>,<span class="st">"^Houston"</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>RB_series <span class="ot">&lt;-</span> RENT_BURDEN <span class="sc">|&gt;</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(stringr<span class="sc">::</span><span class="fu">str_detect</span>(NAME, <span class="fu">paste</span>(focus_names, <span class="at">collapse=</span><span class="st">"|"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, NAME, year, rb_scaled)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>HG_series <span class="ot">&lt;-</span> HG <span class="sc">|&gt;</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(CBSA, year, HG_composite)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>YIMBY_path <span class="ot">&lt;-</span> RB_series <span class="sc">|&gt;</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">inner_join</span>(HG_series, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"CBSA"</span>,<span class="st">"year"</span>))</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(YIMBY_path, <span class="fu">aes</span>(<span class="at">x =</span> rb_scaled, <span class="at">y =</span> HG_composite, <span class="at">color =</span> NAME)) <span class="sc">+</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>(<span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">type =</span> <span class="st">"open"</span>, <span class="at">length =</span> <span class="fu">unit</span>(<span class="dv">3</span>, <span class="st">"pt"</span>)), <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">+</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Trajectory: Rent Burden vs Housing Growth (arrows indicate time forward)"</span>,</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Rent Burden (0–100)"</span>, <span class="at">y =</span> <span class="st">"Housing Growth Composite (0–100)"</span>, <span class="at">color =</span> <span class="st">"CBSA"</span>) <span class="sc">+</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="mp02_files/figure-html/rb-hg-plots-2.png" class="img-fluid figure-img" width="1200"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="task-7-onepage-policy-brief" class="level1">
+<h1>7) Task 7 — One‑Page Policy Brief</h1>
+<div style="border:1px solid #e5e7eb; padding:1rem; border-radius:.5rem;">
+<h3 style="margin-top:0;" class="anchored" data-anchor-id="task-7-onepage-policy-brief">Policy Brief: Making Backyards Affordable for All</h3>
+<p><strong>Primary Sponsor:</strong> New York City CBSA<br>
+<strong>Co‑Sponsor:</strong> Houston CBSA</p>
+
+<p><strong>Problem.</strong> Rent burdens remain elevated in many large metro areas. Our metric, <em>Rent Burden</em>, measures the share of household income needed for rent (annualized rent divided by average household income), scaled 0–100 for comparability. High values signal limited affordability and rising displacement risk.</p>
+
+<p><strong>Evidence.</strong> Using ACS (2009–2023, excluding 2020) and BPS permits, we compute <em>Rent Burden</em> and a two‑part <em>Housing Growth</em> index: (1) permits per capita and (2) permits relative to 5‑year population growth, combined into a 0–100 composite. Since 2014, New York shows a gradual decline in rent burden alongside periods of stronger permitting, while Houston maintains consistently high housing growth with comparatively moderate rent burdens. Scatter and trajectory plots indicate metros with sustained housing growth tend to experience flatter or declining burdens over time.</p>
+
+<p><strong>Policy.</strong> We propose a “<em>Yes‑In‑My‑Backyard Acceleration Package</em>” (YIMBY‑AP) with three pillars:</p>
+<ol>
+<li><em>Legalize &amp; Streamline:</em> State‑compliant upzoning near transit and job centers; ministerial approval for projects that meet form‑based codes; target median total review time &lt; 120 days.</li>
+<li><em>Right‑Sized Incentives:</em> Time‑limited fee abatements and density bonuses tied to on‑site mixed‑income units; automatic bonus multipliers in high rent‑burden tracts.</li>
+<li><em>Infrastructure for Infill:</em> Dedicated utility upgrades and small‑site acquisition funds to unlock land‑constrained neighborhoods, coupled with ADU legalization and pre‑approved plans.</li>
+</ol>
+
+<p><strong>Beneficiaries.</strong> Two example occupation clusters with sizeable employment in both metros:<br>
+(1) <em>Data &amp; Information Services (NAICS 51/5182):</em> workers benefit from stabilized rents near job nodes, improving retention and growth in high‑value sectors.<br>
+(2) <em>Health &amp; Social Services (NAICS 62):</em> diverse, often middle‑income workforce gains from greater rental supply near hospitals and clinics, lowering commute costs and turnover.</p>
+
+<p><strong>Expected Outcomes.</strong> Within 3–5 years, metros implementing YIMBY‑AP can reasonably target: +25–40% in permits over baseline in high‑opportunity tracts; measurable softening in rent‑to‑income ratios; and improved labor market matching, especially in growing knowledge and health sectors.</p>
+
+<p><strong>Why NYC + Houston?</strong> NYC demonstrates the need and fiscal payoff from improving affordability in a high‑productivity region; Houston provides a co‑sponsor model for throughput and permitting speed. Together they form a credible bipartisan coalition for a pragmatic supply‑expansion agenda.</p>
+</div>
+<hr>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
