@@ -1,6 +1,6 @@
 ---
 title: "Mini-Project #03: NYC Street Trees and Council Districts"
-author: "Your Name"
+author: "XU TANG"
 format:
   html:
     toc: true
